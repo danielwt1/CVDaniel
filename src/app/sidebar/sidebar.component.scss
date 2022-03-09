@@ -1,0 +1,48 @@
+
+:host {     
+    background-color: rgb(71, 97, 170);
+    
+}
+
+.avatar {
+    /* Rounded border */
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    //borde redondo
+    border: 3px solid #f3f3f3;
+    box-shadow: 1px 1px 10px 1px #EEEEEE;
+    margin-top: 15px;
+    margin: 0 auto;
+}
+
+.avatar__image {
+    /* Rounded border */
+    border-radius: 50%;
+
+    /* Take full size */
+    height: 100%;
+    width: 100%;
+}
+.sidebar{
+    display: grid;
+    justify-items: center;
+    color: white;
+    
+   
+    
+    //min-height:100vh;    
+    }   
+.content-sidebar{
+    display: grid;
+    grid-template-rows: 200px 200px 50px 50px  2fr 100px 1fr;
+    margin: 20px;
+    gap:0.3rem;
+}
+.profesion{
+    font-size: 20px;
+    margin: 5px;
+    }
+.contacto{
+    margin: 3px;
+}

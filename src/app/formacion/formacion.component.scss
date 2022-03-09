@@ -1,0 +1,8 @@
+.contenido-formacion{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10rem;
+}
+.nombre-universidad{
+    font-weight: bold;
+}
