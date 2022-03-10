@@ -1,0 +1,17 @@
+.conocimientos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.backend{
+    display: grid;
+    gap:1rem;
+    
+}
+.frontend{
+    display: grid;
+    gap:1rem;
+}
+.db{
+    display: grid;
+    gap:1rem;
+}

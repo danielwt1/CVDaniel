@@ -29,9 +29,11 @@
         
         gap: 1rem;
     }
+
 }
 
 @media (min-width: 1024px){
+
     .app{
         display: grid;
         grid-template-columns: 20rem 1fr;
@@ -39,8 +41,12 @@
         
         gap: 1rem;
     }
+
 }
 @media (min-width: 1200px){
+    p{
+        font-size: 500px;
+    }
     .app{
         display: grid;
         grid-template-columns: 20rem 1fr;
@@ -56,5 +62,18 @@
         
         
         gap: 1rem;
+    }
+}
+@media print{
+    .profesion{
+        font-size: 40px;
+    }
+    .content-sidebar{
+        grid-template-rows: 200px 120px 50px 50px  2fr 100px 1fr;
+        margin: 1px;
+        
+    }
+    .print-content-sidebar{
+        color: red;
     }
 }

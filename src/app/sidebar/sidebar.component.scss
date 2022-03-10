@@ -35,7 +35,7 @@
     }   
 .content-sidebar{
     display: grid;
-    grid-template-rows: 200px 200px 50px 50px  2fr 100px 1fr;
+
     margin: 20px;
     gap:0.3rem;
 }
@@ -45,4 +45,27 @@
     }
 .contacto{
     margin: 3px;
+}
+.redes-sociales{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 50px;
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+    }
+}
+
+@media print{
+    .profesion{
+        font-size: 35px;
+    }
+    .content-sidebar{
+        grid-template-rows: 200px 120px 50px 50px  2fr 100px 1fr;
+        
+        
+    }
+
 }
