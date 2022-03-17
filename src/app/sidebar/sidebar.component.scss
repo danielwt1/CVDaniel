@@ -57,6 +57,14 @@
         font-size: 30px;
     }
 }
+.correo{
+    display: grid;
+    grid-template-columns: repeat(2,30px);
+}
+.telefono{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+}
 
 @media print{
     .profesion{
