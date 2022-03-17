@@ -12,7 +12,7 @@ import { ExplaboralComponent } from './explaboral/explaboral.component';
 
 import { ConocimientosComponent } from './conocimientos/conocimientos.component';
 import { FormacionComponent } from './formacion/formacion.component';
-
+import {SkeletonLoaderModule} from './skeleton-loader/skeleton-loader.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,8 @@ import { FormacionComponent } from './formacion/formacion.component';
 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SkeletonLoaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

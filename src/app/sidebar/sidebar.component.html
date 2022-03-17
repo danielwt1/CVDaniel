@@ -1,12 +1,18 @@
 <div class="sidebar">
 
     <div class="content-sidebar">
+
+
         <div class="avatar">
+            <app-skeleton-loader *ngIf="!loaded" Cwidth="150" Cheight="150" circle="true" >
+
+            </app-skeleton-loader>
             <!-- Avatar image -->
-            <img class="avatar__image"
+            <img *ngIf="loaded" class="avatar__image"
                 src="https://media.discordapp.net/attachments/381652327247118337/950539937256726578/WhatsApp_Image_2022-02-24_at_12.23.42_PM.jpeg?width=459&height=465" />
         </div>
         <app-about-me></app-about-me>
+
         <p class="profesion">Estudiante de Ingenieria de Sistemas</p>
         <div class="contacto">
             <div class="correo">
@@ -38,7 +44,7 @@
         <app-idioms></app-idioms>
 
         <app-intereses></app-intereses>
-        <div class="redes-sociales">
+        <div class="redes-sociales" (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'">
             <a href="https://www.linkedin.com/in/daniel-ramos-2346601a9/"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/danielwt1"><i class="fa-brands fa-github"></i></a>
             <a href="https://gitlab.com/dramosg"><i class="fa-brands fa-gitlab"></i></a>

@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./content.component.scss']
 })
 export class ContentComponent implements OnInit {
-
+  loaded=false;
   constructor() { }
-
+  
   ngOnInit(): void {
+    setInterval(()=>{
+      this.loaded=true;
+    },3000);
   }
 
 }

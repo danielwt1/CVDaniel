@@ -18,7 +18,7 @@ h2{
     color: rgb(71, 97, 170);
 }
 p{
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 .titulo-seccion{
     color: rgb(71, 97, 170);
@@ -26,6 +26,11 @@ p{
 .fecha{
     color: rgb(71, 97, 170);
     font-weight: 800;
+}
+@media(min-width:768px){
+    .redes-sociales{
+        color: red;
+    }
 }
 @media (min-width: 1024px){
     p,td{

@@ -63,7 +63,25 @@
 }
 .telefono{
     display: grid;
-    grid-template-columns: 1fr 10fr;
+    grid-template-columns: 20px 150px;
+}
+.fixed{
+    position: fixed;
+    width: 100%;
+    transition: 0.2s linear;
+    margin: 0px;
+    top: 0px;
+    left: 0;
+    padding: 10px 5px 10px 5px;    
+    text-align: center;
+    background-color: rgb(71, 97, 170);
+
+}
+.nofixed{
+    position: static;
+    transition: 0.2s linear;
+    top: -50px;
+
 }
 
 @media print{
@@ -76,4 +94,9 @@
         
     }
 
+}
+@media(min-width:768px){
+    .telefono{
+        grid-template-columns: 1fr 20fr;
+    }
 }

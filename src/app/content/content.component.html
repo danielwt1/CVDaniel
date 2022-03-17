@@ -1,5 +1,12 @@
+
 <div class="contenido">
-    <app-explaboral></app-explaboral>
-    <app-formacion></app-formacion>
-    <app-conocimientos></app-conocimientos>
+    <app-skeleton-loader *ngIf="!loaded" Cwidth="350" Cheight="50" >
+    </app-skeleton-loader>
+    <app-explaboral *ngIf="loaded"></app-explaboral>
+    <app-skeleton-loader *ngIf="!loaded" Cwidth="350" Cheight="50" >
+    </app-skeleton-loader>
+    <app-formacion *ngIf="loaded"></app-formacion>
+    <app-skeleton-loader *ngIf="!loaded" Cwidth="350" Cheight="50" >
+    </app-skeleton-loader>
+    <app-conocimientos *ngIf="loaded"></app-conocimientos>
 </div>
