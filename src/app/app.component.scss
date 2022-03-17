@@ -1,7 +1,4 @@
-.app{
-    display: flex;       
-    gap: 1rem;
-}
+
 
 @media (min-width: 50px){
     .app{
@@ -17,7 +14,7 @@
 @media (min-width: 550px){
     .app{
         display: grid;
-        grid-template-columns: 1fr;        
+        grid-template-columns: 1fr;  
         
         gap: 1rem;
     }
